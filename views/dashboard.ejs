@@ -1,0 +1,45 @@
+<!-- views/dashboard.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px 0;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    a:hover {
+      background-color: #0056b3;
+    }
+
+    .dashboard-container {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Dashboard</h1>
+    <h2>Welcome, <%= user.name %></h2>
+    <a href="/users/logout">Logout</a>
+    <a href="/upload">Upload File</a>
+  </div>
+</body>
+</html>
